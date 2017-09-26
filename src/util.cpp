@@ -1031,10 +1031,10 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Dimecoin
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Dimecoin
-    // Mac: ~/Library/Application Support/Dimecoin
-    // Unix: ~/.dimecoin
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Mastercar
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Mastercar
+    // Mac: ~/Library/Application Support/Mastercar
+    // Unix: ~/.mastercar
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "Mastercar";
